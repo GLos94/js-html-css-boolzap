@@ -225,6 +225,15 @@
   color: grey;
 }
 
+.chat-recenti::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.orario{
+  float: right;
+}
 
 .chat-recenti{
   position: absolute;
