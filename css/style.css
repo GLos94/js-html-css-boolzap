@@ -17,14 +17,14 @@
 .fixed-left{
   float: left;
   width: 400px;
-  height: 100%;
+  height: 100vh;
 }
 
 .main-content{
   float: left;
   width: calc(100% - 400px);
   height: 100vh;
-  background-image: url('https://preview.redd.it/qwd83nc4xxf41.jpg?width=640&crop=smart&auto=webp&s=e82767fdf47158e80604f407ce4938e44afc6c25');
+
 }
 
 
@@ -32,7 +32,7 @@
 
 /* regole main content */
 
-.main-content{
+.main-content::after{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,6 +40,8 @@
 
 
 .nome-chat-fixed{
+  position: fixed;
+  width: calc(100% - 400px);
   height: 70px;
   background-color: #f1f1f1;
   display: flex;
@@ -60,7 +62,7 @@
 
 .nome-chat{
   position: absolute;
-  left: 35%;
+  left: 8%;
 }
 
 .nome-chat article{
@@ -79,13 +81,23 @@
 }
 
 
+.messaggi{
+  height: calc(100vh - 70px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url('https://preview.redd.it/qwd83nc4xxf41.jpg?width=640&crop=smart&auto=webp&s=e82767fdf47158e80604f407ce4938e44afc6c25');
+  background-repeat: repeat;
+}
+
 .scrivi-messaggio{
+  position: fixed;
+  width: calc(100% - 400px);
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
   background-color: #f1f1f1;
-
+  border-left: 1px solid lightgrey;
 }
 
 .scrivi-messaggio > input{
@@ -100,14 +112,43 @@
   color: grey;
 }
 
+.template{
+  display: none;
+}  
+
+.testo{
+  width: 15%;
+  text-align: center;
+  padding: 2% 2%;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  background-color: #07bc4c;
+}
+
 
 /* regole barra sinistra */
+
+ .barra-sinistra-fissa{
+  position: fixed;
+  height: 175px;
+  width: 400px;
+  z-index: 99;
+}
+
+.fixed-left{
+  position: relative;
+
+}
+
 .home-fixed{
   height: 70px;
   display: flex;
   align-items: center;
   background-color: #f1f1f1;
   z-index: 99;
+  border-right: 1px solid lightgrey;
 }
 
 .icon-barra-sinistra{
@@ -167,4 +208,29 @@
 
 .nuova-chat i{
   color: grey;
+}
+
+
+.chat-recenti{
+  position: absolute;
+  top: 175px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.chat-recenti img{
+  width: 13%;
+  height: auto;
+  margin: 2% 2%;
+  border-radius: 27px;
+  background-color: white;
+}
+
+
+.chat-recenti li{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
 }
