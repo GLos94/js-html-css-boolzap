@@ -87,6 +87,7 @@
   overflow-y: auto;
   background-image: url('https://preview.redd.it/qwd83nc4xxf41.jpg?width=640&crop=smart&auto=webp&s=e82767fdf47158e80604f407ce4938e44afc6c25');
   background-repeat: repeat;
+  padding-top: 90px;
 }
 
 .scrivi-messaggio{
@@ -103,6 +104,7 @@
 .scrivi-messaggio > input{
   width: 90%;
   height: 30px;
+  padding-left: 2%;
   border-style: none;
   border-radius: 20px;
 }
@@ -112,19 +114,32 @@
   color: grey;
 }
 
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .template{
   display: none;
-}  
+}
 
 .testo{
+  float: right;
   width: 15%;
   text-align: center;
+  margin-top: 2%;
   padding: 2% 2%;
   border-radius: 10px;
-  position: absolute;
-  top: 100px;
-  right: 5%;
   background-color: #07bc4c;
+}
+
+#invia{
+  padding: 1% 1%;
+  margin-left: 2%;
+  background-color: #07bc4c;
+  border-style: none;
+  border-radius: 5px;
 }
 
 
@@ -233,4 +248,8 @@
   height: 70px;
   background-color: white;
   border-bottom: 1px solid lightgrey;
+}
+
+.chat-recenti li:hover{
+  background-color: lightgrey;
 }
