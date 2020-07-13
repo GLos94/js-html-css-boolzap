@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* regole generali di struttura */
+
+#wrapper::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.fixed-left{
+  float: left;
+  width: 400px;
+  height: 100%;
+}
+
+.main-content{
+  float: left;
+  width: calc(100% - 400px);
+  height: 100vh;
+  background-image: url('https://preview.redd.it/qwd83nc4xxf41.jpg?width=640&crop=smart&auto=webp&s=e82767fdf47158e80604f407ce4938e44afc6c25');
+}
+
+
+
+
+/* regole main content */
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.nome-chat-fixed{
+  height: 70px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+
+.icon-chat{
+  position: relative;
+  width: 8%;
+  height: auto;
+  margin: 2% 2%;
+  border-radius: 27px;
+  background-color: white;
+}
+
+
+.nome-chat{
+  position: absolute;
+  left: 35%;
+}
+
+.nome-chat article{
+  color: grey;
+}
+
+
+.cerca-allega{
+  width: 10%;
+}
+
+
+.cerca-allega i{
+  color: grey;
+  margin-right: 18%;
+}
+
+
+.scrivi-messaggio{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #f1f1f1;
+
+}
+
+.scrivi-messaggio > input{
+  width: 90%;
+  height: 30px;
+  border-style: none;
+  border-radius: 20px;
+}
+
+.scrivi-messaggio i{
+  margin: 0 3%;
+  color: grey;
+}
+
+
+/* regole barra sinistra */
+.home-fixed{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  z-index: 99;
+}
+
+.icon-barra-sinistra{
+  width: 35%;
+}
+
+.icon-barra-sinistra i{
+  margin: 0 9%;
+  color: grey;
+}
+
+.icona-personale img{
+  width: 13%;
+  height: auto;
+  margin: 2% 2%;
+  border-radius: 27px;
+  background-color: white;
+}
+
+.ricevi-notifiche{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: #9de1fe;
+}
+
+.ricevi-notifiche span{
+  margin: 3%;
+}
+
+.ricevi-notifiche i{
+  font-size: 2rem;
+  color: #9de1fe;
+  background-color: white;
+  border-radius: 35px;
+  padding: 15% 5%;
+}
+
+.ricevi-notifiche a{
+  color: grey;
+}
+
+
+.nuova-chat{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35px;
+  background-color: #f1f1f1;
+}
+
+.nuova-chat input{
+  width: 90%;
+  height: 30px;
+  border-style: none;
+}
+
+.nuova-chat i{
+  color: grey;
+}
