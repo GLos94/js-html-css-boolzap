@@ -33,7 +33,7 @@
             </div>
             <div class="nuova-chat">
               <i class="fas fa-search"></i>
-              <input type="text" name="" value=""   placeholder="Cerca o inizia una nuova chat">
+              <input id="ricerca-utenti" type="text" name="" value=""   placeholder="Cerca o inizia una nuova chat">
             </div>
           </div>
 
@@ -71,13 +71,74 @@
             <span class="cerca-allega"><i class="fas fa-search"></i><i class="fas fa-paperclip"></i><i class="fas fa-ellipsis-v"></i></span>
           </div>
           <div class="messaggi">
-            <div class="template">
+            <div class="message-received">
+              <span class="message-text">Come stai?</span>
+              <span class="message-time">9.40</span>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <div class="message-panel">
+                <div class="message-info">
+                  Info messaggio
+                </div>
+                <div class="message-destroy">
+                  Cancella messaggio
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="message-sent right-messages">
+              <span class="message-text">Tutto bene grazie</span>
+              <span class="message-time">9.45</span>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <div class="message-panel">
+                <div class="message-info">
+                  Info messaggio
+                </div>
+                <div class="message-destroy">
+                  Cancella messaggio
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="template">
               <div class="row">
                 <p class="testo"></p>
               </div>
-
+            </div> -->
+          </div>
+          <div id="template-message-sent" style="display:none">
+          <div class="message-sent">
+            <span id="message-text" class="message-text"></span>
+            <span id="message-time" class="message-time"></span>
+            <i id="down" class="fas fa-chevron-down"></i>
+            <div class="message-panel">
+              <div class="message-info">
+                Info messaggio
+              </div>
+              <div class="message-destroy">
+                Cancella messaggio
+              </div>
             </div>
           </div>
+        </div>
+
+        <div id="template-message-received" style="display:none">
+        <div class="message-received">
+          <span id="message-text" class="message-text">Ok</span>
+          <span id="message-time" class="message-time"></span>
+          <i id="down" class="fas fa-chevron-down"></i>
+          <div class="message-panel">
+            <div class="message-info">
+              Info messaggio
+            </div>
+            <div class="message-destroy">
+              Cancella messaggio
+            </div>
+          </div>
+        </div>
+      </div>
+
           <div class="scrivi-messaggio">
 
             <i class="far fa-smile"></i>
@@ -97,6 +158,6 @@
 
 
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script2.js"></script>
   </body>
 </html>

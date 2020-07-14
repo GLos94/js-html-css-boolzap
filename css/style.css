@@ -115,7 +115,7 @@
   color: grey;
 }
 
-.row::after{
+/* .row::after{
   content: "";
   display: table;
   clear: both;
@@ -123,10 +123,13 @@
 
 .template{
   display: none;
+} */
+
+.right-messages{
+  float: right;
 }
 
-.testo{
-  float: right;
+.message-sent{
   width: 15%;
   text-align: center;
   margin-top: 2%;
@@ -134,6 +137,37 @@
   border-radius: 10px;
   background-color: #07bc4c;
 }
+
+.message-received{
+  width: 15%;
+  text-align: center;
+  margin-top: 2%;
+  padding: 2% 2%;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.message-time{
+  display: block;
+  text-align: right;
+  font-weight: lighter;
+  font-size: 11px;
+}
+
+.message-panel{
+  display: none;
+}
+
+
+/* .testo{
+  float: right;
+  width: 15%;
+  text-align: center;
+  margin-top: 2%;
+  padding: 2% 2%;
+  border-radius: 10px;
+  background-color: #07bc4c;
+} */
 
 #invia{
   padding: 1% 1%;
@@ -224,6 +258,8 @@
 
 .nuova-chat i{
   color: grey;
+  background-color: white;
+  padding: 1.75% 3%;
 }
 
 .chat-recenti::after{
