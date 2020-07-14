@@ -54,20 +54,42 @@ function getActualTime() {
 //   panel.toggle();
 // }
 
-var cerca = $('#ricerca-utenti')
-function cercaUtenti(cerca) {
-  var arrayLettere = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'z'];
 
-  for (var i = 0; i < arrayLettere.length; i++) {
-    if ($('.chat-recenti > li').contains(arrayLettere[i])) {
-    }
-    return true;
-  }
+
+// cerca nei li le lettere dell'alfabeto e se ci sono stampa
+
+function cercaUtenti() {
+  var target = $('#ricerca-utenti');
+  target.keyup(searchKeyup);
 };
+
+function searchKeyup() {
+
+  var key = event.which;
+
+    if (key == 13) {
+      var input = $(this);
+      var txt = input.val();
+
+      input.val('');
+      ricercaContatto(txt);
+    }
+
+}
+
+function ricercaContatto(txt) {
+  var nomi = $('.nomi');
+  nomi.filter(txt)
+}
+
+
+
+
 
 
 function init() {
   addSentListener();
+  cercaUtenti();
 
 }
 
