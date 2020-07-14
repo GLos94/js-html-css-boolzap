@@ -5,6 +5,9 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  background-image: url('https://preview.redd.it/qwd83nc4xxf41.jpg?width=640&crop=smart&auto=webp&s=e82767fdf47158e80604f407ce4938e44afc6c25');
+}
 
 /* regole generali di struttura */
 
@@ -25,10 +28,7 @@
   float: left;
   width: calc(100% - 400px);
   height: 100vh;
-
 }
-
-
 
 
 /* regole main content */
@@ -83,11 +83,11 @@
 
 
 .messaggi{
+  display: flex;
+  flex-direction: column;
   height: calc(100vh - 70px);
   overflow-x: hidden;
   overflow-y: auto;
-  background-image: url('https://preview.redd.it/qwd83nc4xxf41.jpg?width=640&crop=smart&auto=webp&s=e82767fdf47158e80604f407ce4938e44afc6c25');
-  background-repeat: repeat;
   padding-top: 90px;
 }
 
@@ -125,11 +125,13 @@
   display: none;
 } */
 
-.right-messages{
+/* .right-messages{
   float: right;
-}
+} */
+
 
 .message-sent{
+  align-self: flex-end;
   width: 15%;
   text-align: center;
   margin-top: 2%;
@@ -137,6 +139,8 @@
   border-radius: 10px;
   background-color: #07bc4c;
 }
+
+
 
 .message-received{
   width: 15%;
@@ -159,16 +163,6 @@
 }
 
 
-/* .testo{
-  float: right;
-  width: 15%;
-  text-align: center;
-  margin-top: 2%;
-  padding: 2% 2%;
-  border-radius: 10px;
-  background-color: #07bc4c;
-} */
-
 #invia{
   padding: 1% 1%;
   margin-left: 2%;
@@ -189,7 +183,6 @@
 
 .fixed-left{
   position: relative;
-
 }
 
 .home-fixed{
