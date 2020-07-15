@@ -48,14 +48,6 @@ function getActualTime() {
 }
 
 
-// mostra il pannello per intervenire sul mess
-// function showPanel() {
-//   var panel = $('.message-panel');
-//   $('#down').click();
-//   panel.toggle();
-// }
-
-
 
 // cerca i contatti per singola lettera
 function cercaUtenti() {
@@ -64,30 +56,50 @@ function cercaUtenti() {
 };
 
 function searchKeyup() {
+  var input = $(this);
+  var txt = input.val();
 
-  var key = event.which;
+  var contacts = $('.chat-recenti  li');
 
-    if (key == 13) {
-      var input = $(this);
-      var txt = input.val();
+  contacts.each(function () {
+    var contact = $(this);
+    var name = contact.find('.nomi').text();
+    console.log(name);
 
-      input.val('');
-      ricercaContatto(txt);
+
+    if (name.toLowerCase().includes(txt.toLowerCase())) {
+    contact.show();
+    } else {
+    contact.hide();
     }
 
-}
-
-function ricercaContatto(txt) {
-  var nomi = $('.nomi');
-  nomi.each(function(){
-      if(nomi.includes(txt)){
-          $(this).closest('.chat-recenti').show();
-      }else{
-          $(this).closest('.chat-recenti').hide();
-      }
-    })
+  });
 
 };
+
+
+// mostra il pannello per intervenire sul mess
+function addTestListener() {
+
+    var infoMes = $('.message-panel');
+    var info = $(this);
+
+    $(document).on('click', '#down', function () {
+      infoMes.toggle();
+    });
+
+
+  };
+
+
+// cancella il messaggio
+var cancella = $('.message-destroy');
+cancella.click(function () {
+  $('.messaggi > div').hide();
+})
+
+
+// click sul contatto e mostra la conversazione corrispondente
 
 
 
@@ -95,7 +107,7 @@ function ricercaContatto(txt) {
 function init() {
   addSentListener();
   cercaUtenti();
-
+  addTestListener();
 }
 
 $(document).ready(init)
