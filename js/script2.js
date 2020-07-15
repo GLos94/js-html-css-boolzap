@@ -81,21 +81,22 @@ function searchKeyup() {
 // mostra il pannello per intervenire sul mess
 function addTestListener() {
 
-    var infoMes = $('.message-panel');
-    var info = $(this);
+    // var infoMes = $('.message-panel');
 
     $(document).on('click', '#down', function () {
-      infoMes.toggle();
+      $(this).siblings('.message-panel').toggle();
     });
 
 
   };
 
 
+
+
 // cancella il messaggio
 var cancella = $('.message-destroy');
 cancella.click(function () {
-  $('.messaggi > div').hide();
+  $(this).parents('.messaggi > div').hide();
 })
 
 
