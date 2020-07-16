@@ -90,7 +90,6 @@ function addTestListener() {
 
 
 // cancella il messaggio
-
 $(document).on('click', '.message-destroy', function () {
   $(this).parents('.messaggi > div').hide();
 });
@@ -101,7 +100,7 @@ function addContactClickListener() {
   var contacts = $(".chat-recenti li");
   contacts.click(contactClick);
 
-  // evidenzio chat attiva a sinista
+// evidenzio chat attiva a sinistra
   function contactClick() {
     var clickedContact = $(this);
     var id = clickedContact.data('id');
@@ -117,13 +116,14 @@ function addContactClickListener() {
     conversations.removeClass('active');
     selectedCoversation.addClass('active');
 
+// cambio nome e immagine contatto
     var name = $(this).find('.nomi strong').text();
     $(".container-messaggi .nome-chat-fixed").find(".nome-chat").text(name);
 
     var img = $(this).find('.contact-img').attr('src');
     $('.container-messaggi .nome-chat-fixed' ).find('.icon-chat').attr("src", img);
 
-    // var ultimoAccesso = da fare! 
+// var ultimoAccesso = da fare!
 
   }
 

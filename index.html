@@ -14,16 +14,17 @@
 
     <main>
       <div id="wrapper">
+<!-- sezione sinistra con elenco conversazioni -->
         <div class="fixed-left">
           <div class="barra-sinistra-fissa">
 
-
-          <div class="home-fixed">
-            <span class="icona-personale">
-              <img src="img/avatar.png" alt="">
-            </span>
-            <span class="icon-barra-sinistra"><i class="fas fa-circle-notch"></i><i class="fas fa-comment-alt"></i><i class="fas fa-ellipsis-v"></i></span>
-          </div>
+<!-- barra con info personali -->
+            <div class="home-fixed">
+              <span class="icona-personale">
+                <img src="img/avatar.png" alt="">
+              </span>
+              <span class="icon-barra-sinistra"><i class="fas fa-circle-notch"></i><i class="fas fa-comment-alt"></i><i class="fas fa-ellipsis-v"></i></span>
+            </div>
             <div class="ricevi-notifiche">
               <span><i class="fas fa-bell-slash"></i></span>
               <span>
@@ -37,28 +38,123 @@
             </div>
           </div>
 
+
+<!-- elenco conversazioni recenti -->
           <div class="chat-recenti">
             <ul>
-              <li class="active" data-id=0><img class="contact-img active" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt=""><span class="nomi active" data-id=0><strong>Michele
-              </strong> <br> Come stai? </span>
-            </li>
-
-              <li data-id=1><img class="contact-img" src="https://cdn.icon-icons.com/icons2/1736/PNG/512/4043251-avatar-female-girl-woman_113291.png" alt=""><span class="nomi" data-id=1><strong>Teresa</strong> <br> Usciamo stasera? </span>
+              <li class="active" data-id=0>
+                <img class="contact-img active" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="">
+                <span class="nomi active" data-id=0><strong>Michele
+                </strong> <br> Come stai? </span>
               </li>
 
-              <li data-id=2><img class="contact-img" src="https://cdn1.iconfinder.com/data/icons/avatar-97/32/avatar-02-512.png" alt=""><span class="nomi" data-id=2><strong>Giovanna</strong> <br> Sono a lavoro </span></li>
+              <li data-id=1>
+                <img class="contact-img" src="https://cdn.icon-icons.com/icons2/1736/PNG/512/4043251-avatar-female-girl-woman_113291.png" alt="">
+                <span class="nomi" data-id=1><strong>Teresa</strong> <br> Usciamo stasera? </span>
+              </li>
 
+              <li data-id=2>
+                <img class="contact-img" src="https://cdn1.iconfinder.com/data/icons/avatar-97/32/avatar-02-512.png" alt="">
+                <span class="nomi" data-id=2><strong>Giovanna</strong> <br> Sono a lavoro </span>
+              </li>
             </ul>
           </div>
 
         </div>
 
 
-
+<!-- conversazione selezionata e attiva -->
         <div class="main-content">
           <div class="container-messaggi active" data-id=0>
+            <div class="nome-chat-fixed">
+              <span class="imm-contatto"><img class="icon-chat" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="Michele"></span>
+              <span class="nome-chat"><strong>Michele</strong>
+              <article class="">
+                Ultimo accesso ore 13.40
+              </article></span>
+              <span class="cerca-allega"><i class="fas fa-search"></i><i class="fas fa-paperclip"></i><i class="fas fa-ellipsis-v"></i></span>
+            </div>
+
+<!-- sezione messaggi inviati e ricevuti  -->
+            <div class="messaggi">
+              <div class="message-received">
+                <span class="message-text">Come stai?</span>
+                <span class="message-time">9.40</span>
+                <i id="down" class="fas fa-chevron-down"></i>
+                <div class="message-panel">
+                  <div class="message-info">
+                    Info messaggio
+                  </div>
+                  <div class="message-destroy">
+                    Cancella messaggio
+                  </div>
+                </div>
+              </div>
+
+              <div class="message-sent right-messages">
+                <span class="message-text">Tutto bene grazie</span>
+                <span class="message-time">9.45</span>
+                <i id="down" class="fas fa-chevron-down"></i>
+                <div class="message-panel">
+                  <div class="message-info">
+                    Info messaggio
+                  </div>
+                  <div class="message-destroy">
+                    Cancella messaggio
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
 
 
+
+          <div class="container-messaggi" data-id=1>
+            <div class="nome-chat-fixed">
+              <span class="imm-contatto"><img class="icon-chat" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="Michele"></span>
+              <span class="nome-chat"><strong>Michele</strong>
+              <article class="">
+                Ultimo accesso ore 13.40
+              </article></span>
+              <span class="cerca-allega"><i class="fas fa-search"></i><i class="fas fa-paperclip"></i><i class="fas fa-ellipsis-v"></i></span>
+            </div>
+
+            <div class="messaggi">
+              <div class="message-received">
+              <span class="message-text">Usciamo stasera?</span>
+                <span class="message-time">9.40</span>
+                <i id="down" class="fas fa-chevron-down"></i>
+                <div class="message-panel">
+                  <div class="message-info">
+                    Info messaggio
+                  </div>
+                  <div class="message-destroy">
+                    Cancella messaggio
+                  </div>
+                </div>
+              </div>
+
+              <div class="message-sent right-messages">
+                <span class="message-text">Va bene, ci vediamo in centro</span>
+                <span class="message-time">9.45</span>
+                <i id="down" class="fas fa-chevron-down"></i>
+                <div class="message-panel">
+                  <div class="message-info">
+                    Info messaggio
+                  </div>
+                  <div class="message-destroy">
+                    Cancella messaggio
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+
+        <div class="container-messaggi" data-id=2>
           <div class="nome-chat-fixed">
             <span class="imm-contatto"><img class="icon-chat" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="Michele"></span>
             <span class="nome-chat"><strong>Michele</strong>
@@ -67,98 +163,6 @@
             </article></span>
             <span class="cerca-allega"><i class="fas fa-search"></i><i class="fas fa-paperclip"></i><i class="fas fa-ellipsis-v"></i></span>
           </div>
-          <div class="messaggi">
-            <div class="message-received">
-              <span class="message-text">Come stai?</span>
-              <span class="message-time">9.40</span>
-              <i id="down" class="fas fa-chevron-down"></i>
-              <div class="message-panel">
-                <div class="message-info">
-                  Info messaggio
-                </div>
-                <div class="message-destroy">
-                  Cancella messaggio
-                </div>
-              </div>
-            </div>
-
-
-            <div class="message-sent right-messages">
-              <span class="message-text">Tutto bene grazie</span>
-              <span class="message-time">9.45</span>
-              <i id="down" class="fas fa-chevron-down"></i>
-              <div class="message-panel">
-                <div class="message-info">
-                  Info messaggio
-                </div>
-                <div class="message-destroy">
-                  Cancella messaggio
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-
-
-
-        <div class="container-messaggi" data-id=1>
-
-
-          <div class="nome-chat-fixed">
-            <span class="imm-contatto"><img class="icon-chat" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="Michele"></span>
-            <span class="nome-chat"><strong>Michele</strong>
-            <article class="">
-              Ultimo accesso ore 13.40
-            </article></span>
-            <span class="cerca-allega"><i class="fas fa-search"></i><i class="fas fa-paperclip"></i><i class="fas fa-ellipsis-v"></i></span>
-          </div>
-
-          <div class="messaggi">
-            <div class="message-received">
-            <span class="message-text">Usciamo stasera?</span>
-              <span class="message-time">9.40</span>
-              <i id="down" class="fas fa-chevron-down"></i>
-              <div class="message-panel">
-                <div class="message-info">
-                  Info messaggio
-                </div>
-                <div class="message-destroy">
-                  Cancella messaggio
-                </div>
-              </div>
-            </div>
-
-
-            <div class="message-sent right-messages">
-              <span class="message-text">Va bene, ci vediamo in centro</span>
-              <span class="message-time">9.45</span>
-              <i id="down" class="fas fa-chevron-down"></i>
-              <div class="message-panel">
-                <div class="message-info">
-                  Info messaggio
-                </div>
-                <div class="message-destroy">
-                  Cancella messaggio
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
-      <div class="container-messaggi" data-id=2>
-        <div class="nome-chat-fixed">
-          <span class="imm-contatto"><img class="icon-chat" src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png" alt="Michele"></span>
-          <span class="nome-chat"><strong>Michele</strong>
-          <article class="">
-            Ultimo accesso ore 13.40
-          </article></span>
-          <span class="cerca-allega"><i class="fas fa-search"></i><i class="fas fa-paperclip"></i><i class="fas fa-ellipsis-v"></i></span>
-        </div>
           <div class="messaggi">
             <div class="message-received">
               <span class="message-text">Sono a lavoro</span>
@@ -173,7 +177,6 @@
                 </div>
               </div>
             </div>
-
 
             <div class="message-sent right-messages">
               <span class="message-text">Ok, a dopo</span>
@@ -191,43 +194,44 @@
 
 
           </div>
-          </div>
+
+        </div>
 
 <!-- creazione template per invio e ricezione messaggi  -->
           <div id="template-message-sent" style="display:none">
-          <div class="message-sent">
-            <span class="message-text"></span>
-            <span class="message-time"></span>
-            <i id="down" class="fas fa-chevron-down"></i>
-            <div class="message-panel">
-              <div class="message-info">
-                Info messaggio
-              </div>
-              <div class="message-destroy">
-                Cancella messaggio
+            <div class="message-sent">
+              <span class="message-text"></span>
+              <span class="message-time"></span>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <div class="message-panel">
+                <div class="message-info">
+                  Info messaggio
+                </div>
+                <div class="message-destroy">
+                  Cancella messaggio
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div id="template-message-received" style="display:none">
-        <div class="message-received">
-          <span class="message-text">Ok</span>
-          <span class="message-time"></span>
-          <i id="down" class="fas fa-chevron-down"></i>
-          <div class="message-panel">
-            <div class="message-info">
-              Info messaggio
-            </div>
-            <div class="message-destroy">
-              Cancella messaggio
+          <div id="template-message-received" style="display:none">
+            <div class="message-received">
+              <span class="message-text">Ok</span>
+              <span class="message-time"></span>
+              <i id="down" class="fas fa-chevron-down"></i>
+              <div class="message-panel">
+                <div class="message-info">
+                  Info messaggio
+                </div>
+                <div class="message-destroy">
+                  Cancella messaggio
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
+<!-- input scrivi messaggio -->
           <div class="scrivi-messaggio">
-
             <i class="far fa-smile"></i>
             <input id="scrivi" type="text" name="" value="" placeholder="Scrivi un messaggio">
             <button id="invia" type="button" name="button">Invia</button>
@@ -240,11 +244,6 @@
 
 
     </main>
-
-
-
-
-
     <script type="text/javascript" src="js/script2.js"></script>
   </body>
 </html>
