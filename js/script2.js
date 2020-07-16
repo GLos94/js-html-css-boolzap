@@ -105,26 +105,28 @@ function addContactClickListener() {
   function contactClick() {
     var clickedContact = $(this);
     var id = clickedContact.data('id');
-    var contacts = $(".chat-recenti li");
+    var contacts = $(".chat-recenti  li");
 
     contacts.removeClass("active");
     clickedContact.addClass("active");
 
-    var conversations = $('.messaggi');
-    var selectedCoversation = $('.messaggi[data-id=' + id + ']');
+    var conversations = $('.container-messaggi');
+    var selectedCoversation = $('.container-messaggi[data-id=' + id + ']');
 
 
     conversations.removeClass('active');
-    selectedCoversation.addClass('active')
+    selectedCoversation.addClass('active');
 
-
+  
 
   }
 
 
 
+
+
 };
-      // cambio nome e img in alto a sinistra
+
 
 
 

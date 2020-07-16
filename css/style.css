@@ -125,9 +125,9 @@ body{
   display: none;
 } */
 
-/* .right-messages{
+.right-messages{
   float: right;
-} */
+}
 
 
 .message-sent{
@@ -297,10 +297,10 @@ li.active{
   background-color: purple;
 }
 
-.messaggi{
+.container-messaggi{
   display: none;
 }
 
-.messaggi.active{
+.container-messaggi.active{
   display: block;
 }
