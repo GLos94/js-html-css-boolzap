@@ -81,7 +81,6 @@ function searchKeyup() {
 // mostra il pannello per intervenire sul mess
 function addTestListener() {
 
-
     $(document).on('click', '#down', function () {
       $(this).siblings('.message-panel').toggle();
     });
@@ -94,10 +93,39 @@ function addTestListener() {
 
 $(document).on('click', '.message-destroy', function () {
   $(this).parents('.messaggi > div').hide();
-})
+});
 
 
 // click sul contatto e mostra la conversazione corrispondente
+function addContactClickListener() {
+  var contacts = $(".chat-recenti li");
+  contacts.click(contactClick);
+
+  // evidenzio chat attiva a sinista
+  function contactClick() {
+    var clickedContact = $(this);
+    var id = clickedContact.data('id');
+    var contacts = $(".chat-recenti li");
+
+    contacts.removeClass("active");
+    clickedContact.addClass("active");
+
+    var conversations = $('.messaggi');
+    var selectedCoversation = $('.messaggi[data-id=' + id + ']');
+
+
+    conversations.removeClass('active');
+    selectedCoversation.addClass('active')
+
+
+
+  }
+
+
+
+};
+      // cambio nome e img in alto a sinistra
+
 
 
 
@@ -106,6 +134,7 @@ function init() {
   addSentListener();
   cercaUtenti();
   addTestListener();
-}
+  addContactClickListener();
+};
 
-$(document).ready(init)
+$(document).ready(init);

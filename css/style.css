@@ -292,3 +292,15 @@ body{
 .chat-recenti li:hover{
   background-color: lightgrey;
 }
+
+li.active{
+  background-color: purple;
+}
+
+.messaggi{
+  display: none;
+}
+
+.messaggi.active{
+  display: block;
+}
