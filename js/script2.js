@@ -117,7 +117,13 @@ function addContactClickListener() {
     conversations.removeClass('active');
     selectedCoversation.addClass('active');
 
-  
+    var name = $(this).find('.nomi strong').text();
+    $(".container-messaggi .nome-chat-fixed").find(".nome-chat").text(name);
+
+    var img = $(this).find('.contact-img').attr('src');
+    $('.container-messaggi .nome-chat-fixed' ).find('.icon-chat').attr("src", img);
+
+    // var ultimoAccesso = da fare! 
 
   }
 
