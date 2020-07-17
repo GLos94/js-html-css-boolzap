@@ -118,15 +118,17 @@ function addContactClickListener() {
 
 // cambio nome e immagine contatto
     var name = $(this).find('.nomi strong').text();
-    $(".container-messaggi .nome-chat-fixed").find(".nome-chat").text(name);
+    $(".container-messaggi .nome-chat-fixed").find(".nome-chat").text(name)
 
     var img = $(this).find('.contact-img').attr('src');
     $('.container-messaggi .nome-chat-fixed' ).find('.icon-chat').attr("src", img);
 
 
 // cambio ultimo accesso
-    var ultimoAccesso = $(this).find('span.orario-accesso').text();
-    $('.container-messaggi .nome-chat-fixed').find('.ora-accesso').text(ultimoAccesso)
+    var ultimoAccesso = $(this).find('.orario-accesso').text();
+    $(".container-messaggi .nome-chat-fixed").find('.ultimo-accesso').text('Ultimo accesso ore ' + ultimoAccesso);
+
+
 
   }
 

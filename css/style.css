@@ -63,13 +63,21 @@ body{
 
 .nome-chat{
   position: absolute;
+  top: 24%;
   left: 8%;
+  font-weight: bold;
+
 }
 
 .nome-chat article{
   color: grey;
 }
 
+.ultimo-accesso{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+}
 
 .cerca-allega{
   width: 10%;
@@ -135,6 +143,7 @@ body{
   width: 15%;
   text-align: center;
   margin-top: 2%;
+  margin-right: 2%;
   padding: 2% 2%;
   border-radius: 10px;
   background-color: #07bc4c;
@@ -146,6 +155,7 @@ body{
   width: 15%;
   text-align: center;
   margin-top: 2%;
+  margin-left: 2%;
   padding: 2% 2%;
   border-radius: 10px;
   background-color: #ccc;
