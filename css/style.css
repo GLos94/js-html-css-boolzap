@@ -118,7 +118,7 @@ body{
   border-radius: 20px;
 }
 
-.scrivi-messaggio i{
+.scrivi-messaggio a{
   margin: 0 3%;
   color: grey;
 }
@@ -131,7 +131,6 @@ body{
 .message-sent{
   align-self: flex-end;
   width: 15%;
-  /* text-align: center; */
   margin-top: 2%;
   margin-right: 2%;
   padding: 2% 2%;
@@ -141,7 +140,6 @@ body{
 
 .message-received{
   width: 15%;
-  /* text-align: center; */
   margin-top: 2%;
   margin-left: 2%;
   padding: 2% 2%;
@@ -216,8 +214,8 @@ body{
   width: 35%;
 }
 
-.icon-barra-sinistra i{
-  margin: 0 9%;
+.icon-barra-sinistra a{
+  margin: 0 7%;
   color: grey;
 }
 
