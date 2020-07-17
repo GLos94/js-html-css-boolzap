@@ -17,7 +17,6 @@ body{
   clear: both;
 }
 
-
 .fixed-left{
   float: left;
   width: 400px;
@@ -40,7 +39,6 @@ body{
   justify-content: space-between;
 }
 
-
 .nome-chat-fixed{
   position: fixed;
   width: calc(100% - 400px);
@@ -60,7 +58,6 @@ body{
   border-radius: 27px;
   background-color: white;
 }
-
 
 .nome-chat{
   position: absolute;
@@ -83,12 +80,10 @@ body{
   width: 10%;
 }
 
-
 .cerca-allega i{
   color: grey;
   margin-right: 18%;
 }
-
 
 .messaggi{
   display: flex;
@@ -168,7 +163,6 @@ body{
 .message-destroy:hover{
   background-color: #dc2417;
 }
-
 
 .orario-accesso{
   position: absolute;
@@ -250,7 +244,6 @@ body{
   color: grey;
 }
 
-
 .nuova-chat{
   display: flex;
   justify-content: space-around;
@@ -295,7 +288,6 @@ body{
   border-radius: 27px;
   background-color: white;
 }
-
 
 .chat-recenti li{
   display: flex;

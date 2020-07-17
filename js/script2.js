@@ -2,7 +2,7 @@
 function addSentListener() {
   var target = $('#scrivi');
   target.keyup(sendKeyup);
-}
+};
 
 function sendKeyup(event) {
   var key = event.which;
@@ -12,8 +12,8 @@ function sendKeyup(event) {
 
     input.val('');
     sendMessage(txt);
-  }
-}
+  };
+};
 
 
 // invia e ricevi conferma mess
@@ -39,14 +39,14 @@ function sendMessage(txt) {
 
     };
 
-}
+};
 
 
 // cattura tempo attuale
 function getActualTime() {
   var date = new Date();
   return date.getHours() + ':' + date.getMinutes();
-}
+};
 
 
 
@@ -66,7 +66,6 @@ function searchKeyup() {
     var contact = $(this);
     var name = contact.find('.nomi').text();
     console.log(name);
-
 
     if (name.toLowerCase().includes(txt.toLowerCase())) {
     contact.show();
@@ -130,8 +129,7 @@ function addContactClickListener() {
     $(".container-messaggi .nome-chat-fixed").find('.ultimo-accesso').text('Ultimo accesso ore ' + ultimoAccesso);
 
 
-
-  }
+  };
 
 
 
