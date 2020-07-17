@@ -15,6 +15,7 @@ function sendKeyup(event) {
   }
 }
 
+
 // invia e ricevi conferma mess
 function sendMessage(txt) {
   var template = $('#template-message-sent > div').clone();

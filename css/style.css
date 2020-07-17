@@ -22,6 +22,7 @@ body{
   float: left;
   width: 400px;
   height: 100vh;
+  background-color: white;
 }
 
 .main-content{
@@ -66,7 +67,6 @@ body{
   top: 24%;
   left: 8%;
   font-weight: bold;
-
 }
 
 .nome-chat article{
@@ -123,25 +123,15 @@ body{
   color: grey;
 }
 
-/* .row::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.template{
-  display: none;
-} */
 
 .right-messages{
   float: right;
 }
 
-
 .message-sent{
   align-self: flex-end;
   width: 15%;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 2%;
   margin-right: 2%;
   padding: 2% 2%;
@@ -149,11 +139,9 @@ body{
   background-color: #07bc4c;
 }
 
-
-
 .message-received{
   width: 15%;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 2%;
   margin-left: 2%;
   padding: 2% 2%;
@@ -168,16 +156,30 @@ body{
   font-size: 11px;
 }
 
+.message-info, .message-destroy{
+  background-color: #2196f3;
+  padding: 2% 2%;
+  margin: 2% 2%;
+  border-radius: 7px;
+}
+
+.message-info:hover{
+  background-color: yellow;
+}
+
+.message-destroy:hover{
+  background-color: #dc2417;
+}
+
+
 .orario-accesso{
   position: absolute;
   right: 20px;
-
 }
 
 .message-panel{
   display: none;
 }
-
 
 #invia{
   padding: 1% 1%;
