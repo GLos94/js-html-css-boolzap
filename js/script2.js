@@ -81,7 +81,7 @@ function searchKeyup() {
 // mostra il pannello per intervenire sul mess
 function addTestListener() {
 
-    $(document).on('click', '#down', function () {
+    $(document).on('click', '.down', function () {
       $(this).siblings('.message-panel').toggle();
     });
 
@@ -123,7 +123,10 @@ function addContactClickListener() {
     var img = $(this).find('.contact-img').attr('src');
     $('.container-messaggi .nome-chat-fixed' ).find('.icon-chat').attr("src", img);
 
-// var ultimoAccesso = da fare!
+
+// cambio ultimo accesso
+    var ultimoAccesso = $(this).find('span.orario-accesso').text();
+    $('.container-messaggi .nome-chat-fixed').find('.ora-accesso').text(ultimoAccesso)
 
   }
 

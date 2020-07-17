@@ -158,6 +158,12 @@ body{
   font-size: 11px;
 }
 
+.orario-accesso{
+  position: absolute;
+  right: 20px;
+
+}
+
 .message-panel{
   display: none;
 }
